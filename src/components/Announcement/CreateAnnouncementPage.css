@@ -1,0 +1,54 @@
+.announcement-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .announcement-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .announcement-container select,
+  .announcement-container textarea,
+  .announcement-container input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .poll-options {
+    margin-top: 20px;
+  }
+  
+  .add-option-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover,
+  .add-option-button:hover {
+    background-color: #218838;
+  }
+  
+  .image-upload input[type='file'] {
+    display: none;
+  }
+  

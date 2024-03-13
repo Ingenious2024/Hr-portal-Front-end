@@ -1,0 +1,155 @@
+:root {
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: #FF919D;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #f799a354;
+}
+body {
+  overflow: hidden;
+}
+
+.App {
+  /* padding: 0.5rem 3.5rem; */
+  color: var(--black);
+  background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #ffcfd1 51.55%,
+    #f3c6f1 90.85%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.AppGlass {
+  display: grid;
+  height: 97%;
+  width: 97%;
+  background: var(--glass);
+  border-radius: 2rem;
+  gap: 16px;
+  grid-template-columns: 11rem auto 20rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .AppGlass{
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .AppGlass{
+    grid-template-columns: 1fr;
+  } 
+}
+.css-1ps6pg7-MuiPaper-root {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px
+}
+.css-1ps6pg7-MuiPaper-root {
+  background-color: transparent !important;
+}
+.scrollable-container {
+  max-height: calc(100vh - 100px); /* Adjust this value according to your layout */
+  overflow-y: auto;
+}
+.updown{
+  -ms-overflow-style: none !important; 
+  scrollbar-width: none !important;
+}
+.action-button {
+  position: relative;
+  margin-right: 10px;
+}
+
+.action-button.present {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  margin: 4px;
+}
+
+.action-button.absent {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+}
+
+.circle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #e02f91; /* Yellow */
+  border-radius: 50%;
+  animation: animate-circle 1s ease-out;
+}
+
+@keyframes animate-circle {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.action-button:hover {
+  opacity: 0.9;
+}body {
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.meme {
+  background: var(--purple);
+  color: var(--black);
+}
+
+/* Apply glass effect */
+.login-panel {
+  backdrop-filter: blur(10px);
+  background-color: var(--glass);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--boxShadow);
+}
+
+input, .MuiButton-contained {
+  border-radius: 8px;
+}
+
+.MuiButton-contained {
+  background-color: var(--orange);
+  color: white;
+}
+
+.MuiButton-contained:hover {
+  background-color: darken(var(--orange), 10%);
+}
+
+input {
+  border: 2px solid var(--gray);
+}
+
+/* Adjust styles for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .login-panel {
+    padding: 1rem;
+  }
+}

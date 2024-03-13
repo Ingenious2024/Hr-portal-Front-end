@@ -1,0 +1,26 @@
+.card-title {
+  background-image: cover;
+  background-size: 100% auto;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: -16px 0; /* Adjust this based on your card design */
+
+}
+
+.detail-button {
+
+  background-image: cover;
+  background-size: 100% auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.detail-button:hover {
+  background-image: darken(var(--orange), 10%);
+}
